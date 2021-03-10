@@ -9,11 +9,11 @@ import threading
 import os
 
 s = sk.socket(sk.AF_INET , sk.SOCK_DGRAM )
-s.bind(('192.168.99.106',5555))
+s.bind(('192.168.99.106',5555)) #enter your system IP and port
 print("CHAT SERVICE UP AND RUNNING")
 print("Enter q or quit to end the session")
 name = input("Enter your name (press enter to take system name): ") or sk.gethostname()
-connect = '192.168.99.102'
+connect = '192.168.99.102' #enter remote system IP 
 
 
 def send():
